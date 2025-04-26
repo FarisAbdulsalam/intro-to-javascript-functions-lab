@@ -161,7 +161,7 @@ const convertTemperature = (temp, scale) => {
         let fahrenheit = temp*(9/5)+32;
         return fahrenheit+" (Fahrenheit)";
     } else if (scale === `F` || scale === `f`){
-        let celsius = (temp-32)*(9/5);
+        let celsius = (temp-32)*(5/9);
         return celsius+" (Celsius)";
     }
 }
@@ -275,4 +275,3 @@ function numArgs(){
 } //when written as arrow function it always returned 5
 
 console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
-
